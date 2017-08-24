@@ -23,6 +23,12 @@ while True:
 
     operator = tokens[0]
 
+    operators = ['+', '-', '*', '/', 'square', 'cube', 'pow', 'mod']
+
+    if operator not in operators:
+        print 'Invalid input'
+        continue
+
     if len(tokens) >= 2:
 
         num1 = int(tokens[1])
